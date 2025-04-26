@@ -1,0 +1,17 @@
+python-dotenv
+loguru
+fastapi
+uvicorn
+onnxruntime
+pydub
+pydantic
+openai
+soundfile
+pipecat-ai
+pipecat-ai[deepgram]
+pipecat-ai[openai]
+pipecat-ai[elevenlabs]
+elevenlabs
+deepgram-sdk
+telnyx
+pipecat-ai-flows

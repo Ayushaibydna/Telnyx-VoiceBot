@@ -53,8 +53,7 @@ async def start_call(request: Request):
 
         # ✅ Answer the call and enable streaming in one request
         api_url = f"https://api.telnyx.com/v2/calls/{call_id}/actions/answer"
-        stream_url = "wss://davilas-test-production.up.railway.app/ws"  # Ensure this WebSocket is live!
-
+        stream_url = "wss://telnyx-voicebot-production.up.railway.app/ws"  # Ensure this WebSocket is live!
         headers = {
             "Authorization": f"Bearer {telnyx.api_key}",
             "Content-Type": "application/json",

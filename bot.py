@@ -194,7 +194,7 @@ async def run_bot(
             function={
                 "name": "forward_call",
                 "description": (
-                    "Forward the current call to +306977763966 (human assistant)."
+                    "Forward the current call to +306972292454 (human assistant)."
                 ),
                 "parameters": {
                     "type": "object",
@@ -270,7 +270,7 @@ async def start_forward_call(function_name, llm, context):
 
 async def forward_call(function_name, tool_call_id, args, llm, context, result_callback):
     call_id = context.stream_id
-    dest_num = "+306977763966"
+    dest_num = "+306972292454"
     url = f"https://api.telnyx.com/v2/calls/{call_id}/actions/transfer"
     headers = {
         "Authorization": f"Bearer {os.getenv('TELNYX_API_KEY')}",
